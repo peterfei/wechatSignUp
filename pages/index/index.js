@@ -50,5 +50,20 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+
+  formInputChange:function(e){
+      this.setData({
+          [e.target.dataset.field]:e.detail.value
+      })
+  },
+
+  submitForm:function(){
+
+      const data = {
+          name:this.data.name,
+          student_num:this.data.studentNum
+      }
+      console.log(`submit form data is ${JSON.stringify(data)}`)
   }
 })
