@@ -11,17 +11,17 @@
                         <input type="text" placeholder="请输入院校名称" bindinput="oninput"/>
                     </cell>
                     <cell  >
-                        <input type="text" placeholder="专业学生人数" bindinput="oninput"/>
+                        <input type="number" placeholder="专业学生人数" bindinput="oninput"/>
                     </cell>
                     <cell  >
-                        <input type="text" placeholder="教师人数" bindinput="oninput"/>
+                        <input type="number" placeholder="教师人数" bindinput="oninput"/>
                     </cell>
                     <cell  >
-                        <input type="text" placeholder="计划投入费用" bindinput="oninput"/>
+                        <input type="text" placeholder="计划投入费用" bindinput="oninput" />
                     </cell>
                 </cells>
                 <view class="btn">
-                        <button type="primary" size="weui-btn">提交</button>
+                        <button type="primary" size="weui-btn">确认提交</button>
                 </view>
             </mp-form>
         </view>
