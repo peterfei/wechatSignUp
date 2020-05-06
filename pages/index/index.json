@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "mp-form":"../../miniprogram/form/form",
+        "cells":"../../miniprogram/cells/cells",
+        "cell":"../../miniprogram/cell/cell"
+    },
+  "navigationBarTitleText":"新媒体专业建设报名"
+
 }

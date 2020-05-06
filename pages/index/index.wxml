@@ -3,11 +3,28 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view >
+            <mp-form id="form">
+                <cells>
+                    <cell  >
+                        <input type="text" placeholder="请输入院校名称" bindinput="oninput"/>
+                    </cell>
+                    <cell  >
+                        <input type="text" placeholder="专业学生人数" bindinput="oninput"/>
+                    </cell>
+                    <cell  >
+                        <input type="text" placeholder="教师人数" bindinput="oninput"/>
+                    </cell>
+                    <cell  >
+                        <input type="text" placeholder="计划投入费用" bindinput="oninput"/>
+                    </cell>
+                </cells>
+                <view class="btn">
+                        <button type="primary" size="weui-btn">提交</button>
+                </view>
+            </mp-form>
+        </view>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
   </view>
 </view>

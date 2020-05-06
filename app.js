@@ -1,4 +1,5 @@
 //app.js
+import register from "./api/register.js"
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -35,5 +36,6 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  register:new register()
 })
