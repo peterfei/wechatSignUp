@@ -2,3 +2,9 @@
 .info{
     width:96%;
 }
+.msg{
+    height: 160px;
+    padding: 0 !important;
+    margin: 0 auto !important;
+
+}
