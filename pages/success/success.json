@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "cells":"../../miniprogram/cells/cells",
+        "cell":"../../miniprogram/cell/cell"
+    }
+}

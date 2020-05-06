@@ -1,0 +1,4 @@
+/* pages/success/success.wxss */
+.info{
+    width:96%;
+}

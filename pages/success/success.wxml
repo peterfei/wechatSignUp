@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="info">
+        <cells title="您已成功提交">
+            <cell value="院校名称" footer="陕西师范大学"/>
+            <cell value="学生人数" footer="999"/>
+            <cell value="教师人数" footer="111"/>
+            <cell value="计划投入费用" footer="10000"/>
+        </cells>
+        <view class="btn">
+            <button type="primary" size="default">立即支付</button>
+        </view>
+    </view>
+</view>

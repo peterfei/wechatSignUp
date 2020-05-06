@@ -65,5 +65,16 @@ Page({
           student_num:this.data.studentNum
       }
       console.log(`submit form data is ${JSON.stringify(data)}`)
+    wx.showToast({
+            title: '提交成功',
+            icon: 'none',
+            duration: 1000
+        })
+    setTimeout(function() {
+        wx.navigateTo({
+          url: '../success/success'
+        })
+    }.bind(this), 1000);
+
   }
 })
