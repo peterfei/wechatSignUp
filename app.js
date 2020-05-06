@@ -11,6 +11,10 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+          this.register.login({code:res.code}).then(res=>{
+              console.log(`res is ${JSON.stringify(res)}`)
+              wx.setStorageSync("accessToken",res.access_token)
+          })
       }
     })
     // 获取用户信息

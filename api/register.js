@@ -18,6 +18,14 @@ class register {
       .then(res => res.data);
   }
 
+  /**
+   * @fn signUp  注册
+   * @param [] obj
+   */
+  signUp(obj,header){
+      return this._request.postRequest(this._baseUrl+"api/sign_ups", obj,header).then(res=> res.data)
+  }
+
 
 }
 export default register;

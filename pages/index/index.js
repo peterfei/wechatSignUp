@@ -61,10 +61,22 @@ Page({
   submitForm:function(){
 
       const data = {
-          name:this.data.name,
-          student_num:this.data.studentNum
+          college_name:this.data.name,
+          student_count:this.data.studentNum,
+          teacher_count:this.data.teacherNum,
+          cost:this.data.total
       }
       console.log(`submit form data is ${JSON.stringify(data)}`)
+      const token = wx.getStorageSync("accessToken")
+
+      console.log("token is "+token)
+      app.register.signUp(data,{Authorization:`Bearer ${token}`}).then(res=>{
+          console.log("-----------------------------------")
+          console.log(`info is ${JSON.stringify(res)}`)
+          console.log("-----------------------------------")
+
+          wx.setStorageSync("userInfo",res)
+      })
     wx.showToast({
             title: '提交成功',
             icon: 'none',
