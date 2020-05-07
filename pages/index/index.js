@@ -66,27 +66,36 @@ Page({
           teacher_count:this.data.teacherNum,
           cost:this.data.total
       }
-      console.log(`submit form data is ${JSON.stringify(data)}`)
-      const token = wx.getStorageSync("accessToken")
+      if(this.data.name!=null&& this.data.studentNum!=null && this.data.teacherNum!=null && this.data.total!=null){
+            console.log(`submit form data is ${JSON.stringify(data)}`)
+          const token = wx.getStorageSync("accessToken")
 
-      console.log("token is "+token)
-      app.register.signUp(data,{Authorization:`Bearer ${token}`}).then(res=>{
-          console.log("-----------------------------------")
-          console.log(`info is ${JSON.stringify(res)}`)
-          console.log("-----------------------------------")
+          console.log("token is "+token)
+          app.register.signUp(data,{Authorization:`Bearer ${token}`}).then(res=>{
+              console.log("-----------------------------------")
+              console.log(`info is ${JSON.stringify(res)}`)
+              console.log("-----------------------------------")
 
-          wx.setStorageSync("userInfo",res)
-      })
-    wx.showToast({
-            title: '提交成功',
-            icon: 'none',
-            duration: 1000
-        })
-    setTimeout(function() {
-        wx.navigateTo({
-          url: '../success/success'
-        })
-    }.bind(this), 1000);
+              wx.setStorageSync("userInfo",res)
+          })
+        wx.showToast({
+                title: '提交成功',
+                icon: 'none',
+                duration: 1000
+            })
+        setTimeout(function() {
+            wx.navigateTo({
+              url: '../success/success'
+            })
+        }.bind(this), 1000);
+      }else{
+          wx.showToast({
+              title:"请填完必填内容",
+              icon:"none",
+              duration:2000
+          })
+      }
+
 
   }
 })
