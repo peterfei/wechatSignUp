@@ -1,0 +1,11 @@
+/* pages/payment/payment.wxss */
+.info {
+    width: 96%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.msg {
+    height: 160px;
+}

@@ -1,0 +1,8 @@
+<view class="page-container">
+    <view class="info">
+        <msg type="success" title="支付成功" extClass="msg">
+            您已成功支付
+        </msg>
+        
+    </view>
+</view>

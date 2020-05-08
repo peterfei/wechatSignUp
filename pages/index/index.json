@@ -1,4 +1,4 @@
-{
+ {
     "usingComponents": {
         "mp-form":"../../miniprogram/form/form",
         "cells":"../../miniprogram/cells/cells",

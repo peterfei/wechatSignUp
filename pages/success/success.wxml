@@ -10,8 +10,8 @@
             <cell value="计划投入费用" footer="{{userInfo.cost}}"/>
             <cell value="支付费用" footer="1.00"/>
         </cells>
-        <view class="btn">
-            <button type="primary" size="default">立即支付</button>
+        <view class="btn" wx:if="{{canPay==1}}">
+            <button type="primary" size="default" bindtap="payment">立即支付</button>
         </view>
     </view>
 </view>

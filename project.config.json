@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -24,7 +24,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
-	"appid": "wxd7dcf2bd4d9c9617",
+	"appid": "wx5acf3788f88d4dfc",
 	"projectname": "ibodao_wechat",
 	"debugOptions": {
 		"hidedInDevtools": []
