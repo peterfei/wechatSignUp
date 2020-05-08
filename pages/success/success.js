@@ -29,7 +29,7 @@ Page({
     payment: function() {
         const token = wx.getStorageSync('accessToken');
         console.log(`点击支付`);
-        const data = { amount: 1 };
+        const data = { amount: 100 };
         app.register
             .payment(data, { Authorization: `Bearer ${token}` })
             .then(res => {
